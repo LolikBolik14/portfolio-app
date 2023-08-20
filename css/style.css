@@ -4,6 +4,8 @@
   --ruler: 16px;
   --color-white: #fff;
   --color-font: #8d96a8;
+  --bx-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, 0.2) !important;
 }
 
 body,
@@ -54,8 +56,7 @@ body {
 }
 
 .card-outer {
-  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
-    -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, 0.2) !important;
+  box-shadow: var(--bx-shadow);
   background-color: var(--main-bg) !important;
   border-radius: 30px;
   max-width: 100%;
@@ -105,37 +106,6 @@ h2 {
 h3 {
   font-size: calc(var(--ruler) * 1.5);
 }
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: calc(var(--ruler) * 2) !important;
-  }
-  h2 {
-    font-size: calc(var(--ruler) * 1.5);
-  }
-
-  h3 {
-    font-size: calc(var(--ruler) * 1);
-  }
-  .card-inner {
-    padding: 30px !important;
-  }
-  .example-card {
-    padding: 20px !important;
-  }
-  .launch {
-    width: 250px !important;
-  }
-  .p-4 {
-    padding: 0 !important;
-  }
-  .about-inner {
-    width: 100% !important;
-  }
-  .contact,
-  .about {
-    margin: 0 !important;
-  }
-}
 
 .flag {
   width: 30px;
@@ -163,7 +133,6 @@ h3 {
   text-shadow: 1px 1px 0 var(--color-white);
   color: #61677c;
   font-weight: 600;
-  width: ;
   margin: 0 10px !important;
   box-shadow: -5px -5px 20px var(--color-white),
     5px 5px 20px var(--color-shadow);
@@ -187,8 +156,7 @@ h3 {
   display: block;
   background-color: var(--main-bg);
   padding: 40px;
-  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
-    -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, 0.2) !important;
+  box-shadow: var(--bx-shadow);
   border-radius: 30px;
   max-width: 550px;
   width: fit-content;
@@ -211,8 +179,7 @@ h3 {
   background-color: #f3f4f7;
   border-radius: 10px;
   border: 5px solid #f3f4f7;
-  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
-    -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, 0.2) !important;
+  box-shadow: var(--bx-shadow);
   margin: -5px;
 }
 
@@ -221,7 +188,7 @@ h3 {
 }
 
 .gallery {
-  height: 299px !important;
+  height: 290px !important;
 }
 
 .card-collection .example-card {
@@ -283,4 +250,36 @@ h3 {
 
 #about-me {
   border-radius: calc(var(--ruler) * 3) !important;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: calc(var(--ruler) * 2) !important;
+  }
+  h2 {
+    font-size: calc(var(--ruler) * 1.5);
+  }
+
+  h3 {
+    font-size: calc(var(--ruler) * 1);
+  }
+  .card-inner {
+    padding: 30px !important;
+  }
+  .example-card {
+    padding: 20px !important;
+  }
+  .launch {
+    width: 250px !important;
+  }
+  .p-4 {
+    padding: 0 !important;
+  }
+  .about-inner {
+    width: 100% !important;
+  }
+  .contact,
+  .about {
+    margin: 0 !important;
+  }
 }
