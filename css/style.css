@@ -89,7 +89,6 @@ p {
 
 .greeting,
 #contact-me,
-.about,
 .about-me {
   color: #555f76;
   text-shadow: 1px 1px 1px var(--color-white);
@@ -132,6 +131,10 @@ h3 {
   .about-inner {
     width: 100% !important;
   }
+  .contact,
+  .about {
+    margin: 0 !important;
+  }
 }
 
 .flag {
@@ -141,6 +144,11 @@ h3 {
 .buttons {
   margin: 40px auto;
   text-align: center;
+}
+
+.contact,
+.about {
+  padding: 20px 100px !important;
 }
 
 .btn,
@@ -155,21 +163,24 @@ h3 {
   text-shadow: 1px 1px 0 var(--color-white);
   color: #61677c;
   font-weight: 600;
-  width: 320px;
+  width: ;
   margin: 0 10px !important;
   box-shadow: -5px -5px 20px var(--color-white),
     5px 5px 20px var(--color-shadow);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
 
-  &:active {
-    box-shadow: inset 1px 1px 2px var(--color-shadow),
-      inset -1px -1px 2px var(--color-white);
-  }
-  &:hover {
-    box-shadow: -2px -2px 5px var(--color-white),
-      2px 2px 5px var(--color-shadow);
-  }
+.launch {
+  width: 300px;
+}
+
+&:active {
+  box-shadow: inset 1px 1px 2px var(--color-shadow),
+    inset -1px -1px 2px var(--color-white);
+}
+&:hover {
+  box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
 }
 
 .example-card {
@@ -248,9 +259,9 @@ h3 {
   text-align: center;
 }
 
-/* .about-inner {
-  width: 65% !important;
-} */
+.contact-inner {
+  width: 320px !important;
+}
 
 #contact-me,
 #about-me {
