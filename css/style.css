@@ -295,4 +295,19 @@ h3 {
   .about {
     margin: 0 !important;
   }
+  .hero {
+    padding: 5px 0;
+  }
+  .card-outer {
+    margin: 100px 0 40px 0;
+  }
+  #about-me {
+    padding: 10px 20px;
+  }
+  .about-inner {
+    border-radius: calc(var(--ruler) * 4);
+  }
+  .about {
+    padding: 20px 50px !important;
+  }
 }
