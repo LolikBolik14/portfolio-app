@@ -1,6 +1,8 @@
 :root {
   --main-bg: #ebecf0;
+  --secondary-bg: #e7e7ea;
   --color-shadow: #babecc;
+  --text-color: #555f76;
   --ruler: 16px;
   --color-white: #fff;
   --color-font: #8d96a8;
@@ -18,6 +20,11 @@ body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: -0.2px;
   font-size: var(--ruler);
+}
+
+.hero {
+  background-color: var(--secondary-bg);
+  padding: 5px 0 100px 0;
 }
 
 .navbar {
@@ -38,7 +45,7 @@ body {
 }
 
 .navbar-brand {
-  color: #555f76;
+  color: var(--text-color);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
     -2px -2px 4px rgba(255, 255, 255, 1);
 }
@@ -48,7 +55,7 @@ body {
 }
 
 .navbar-nav .nav-link.active {
-  color: #555f76 !important;
+  color: var(--text-color) !important;
 }
 
 .main {
@@ -61,6 +68,7 @@ body {
   border-radius: 30px;
   max-width: 100%;
   width: max-content;
+  margin: 200px 0 100px 0;
 }
 
 .card-inner {
@@ -90,21 +98,25 @@ p {
 
 .greeting,
 #contact-me,
-.about-me {
-  color: #555f76;
-  text-shadow: 1px 1px 1px var(--color-white);
+.about-me,
+.about {
+  color: var(--text-color);
+  text-shadow: 2px 2px 2px var(--color-white);
   text-align: center;
+  line-height: 1.5em;
 }
 
 h1 {
-  font-size: calc(var(--ruler) * 2.5);
+  font-family: "Kanit", sans-serif;
+  line-height: 1em;
+  font-size: calc(var(--ruler) * 3);
 }
 h2 {
-  font-size: calc(var(--ruler) * 2);
+  font-size: calc(var(--ruler) * 2.5);
+  font-weight: 800;
 }
-
 h3 {
-  font-size: calc(var(--ruler) * 1.5);
+  font-size: calc(var(--ruler) * 1.7);
 }
 
 .flag {
@@ -118,7 +130,10 @@ h3 {
 
 .contact,
 .about {
+  /* text-shadow: 2px 2px 2px var(--color-white); */
   padding: 20px 100px !important;
+  font-weight: 700;
+  /* color: var(--text-color); */
 }
 
 .btn,
@@ -163,7 +178,7 @@ h3 {
 }
 
 .example-card_title {
-  color: #555f76;
+  color: var(--text-color);
   font-size: 22px;
   padding: 20px 0 10px;
   text-align: start;
@@ -172,7 +187,7 @@ h3 {
 .example-card_text {
   padding: 0 0 10px;
   text-align: start;
-  color: #8d96a8;
+  color: var(--color-font);
 }
 
 .example-card-outer {
@@ -220,25 +235,20 @@ h3 {
   display: inline;
 }
 
+.contact-inner {
+  width: 320px !important;
+  text-align: center;
+}
 .contact-inner,
 .about-inner {
   margin: calc(var(--ruler) * 1.5) auto;
   text-align: center;
-}
-
-.contact-inner {
-  width: 320px !important;
-}
-
-#contact-me,
-#about-me {
   border: 0;
   outline: 0;
-  border-radius: calc(var(--ruler) * 20);
+  border-radius: calc(var(--ruler) * 7);
   padding: calc(var(--ruler) * 1.5);
   background-color: var(--main-bg);
-  text-shadow: 1px 1px 0 var(--color-white);
-  margin-right: calc(var(--ruler) / 2);
+  text-align: center;
   box-shadow: inset 2px 2px 5px var(--color-shadow),
     inset -5px -5px 10px var(--color-white);
   width: 100%;
@@ -249,7 +259,10 @@ h3 {
 }
 
 #about-me {
-  border-radius: calc(var(--ruler) * 3) !important;
+  padding: 0 60px;
+  margin-bottom: 0 !important;
+  line-height: 2em;
+  text-shadow: 1px 1px 0 var(--color-white);
 }
 
 @media screen and (max-width: 600px) {
