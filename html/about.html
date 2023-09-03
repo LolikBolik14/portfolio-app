@@ -24,14 +24,14 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>Olga Shliakhova</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <title>About Olga Shliakhova</title>
   </head>
   <body>
     <div class="container-fluid wrapper mx-auto">
       <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">OS</a>
+          <a class="navbar-brand" href="../index.html" title="Homepage">OS</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -50,26 +50,38 @@
               <div class="navbar-nav toggle">
                 <div class="label">
                   <a
-                    class="nav-link active"
+                    class="nav-link"
                     aria-current="page"
-                    href="index.html">
+                    href="../index.html"
+                    title="Homepage">
                     Home
                   </a>
                 </div>
               </div>
               <div class="navbar-nav toggle">
                 <div class="label">
-                  <a class="nav-link" href="html/about.html"> About </a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="about.html"
+                    title="About Olga">
+                    About
+                  </a>
                 </div>
               </div>
               <div class="navbar-nav toggle">
                 <div class="label">
-                  <a class="nav-link" href="html/works.html"> Works </a>
+                  <a class="nav-link" href="works.html" title="Olga`s works">
+                    Works
+                  </a>
                 </div>
               </div>
               <div class="navbar-nav toggle">
                 <div class="label">
-                  <a class="nav-link" href="html/about.html#contact-me">
+                  <a
+                    class="nav-link"
+                    href="contact.html#contact-me"
+                    title="Contact Olga">
                     Contact
                   </a>
                 </div>
@@ -78,6 +90,96 @@
           </div>
         </div>
       </nav>
+
+      <div class="container main-about">
+        <h1 class="about">About me</h1>
+        <img class="flag-big" src="../images/1f1fa-1f1e6.png" alt="Ukraine" />
+        <h3 class="about">
+          Front-end developer from Kyiv, Ukraine and based in USA
+        </h3>
+      </div>
+
+      <div class="container-fluid mx-auto card-collection p-4">
+        <div class="example-card mx-auto">
+          <div class="example-card-outer">
+            <p id="about-me">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+              aperiam provident tempora? Cumque adipisci, non dolorem quia, odit
+              qui alias veniam excepturi rem dolor fugit dignissimos, sed
+              voluptatum blanditiis harum. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Numquam aperiam provident tempora?
+              Cumque adipisci, non dolorem quia, odit qui alias veniam excepturi
+              rem dolor fugit dignissimos, sed voluptatum blanditiis harum.
+            </p>
+          </div>
+        </div>
+        <div class="example-card mx-auto">
+          <div class="example-card-outer">
+            <img
+              class="example-image img-fluid gallery"
+              alt="Olga`s photo"
+              height="300"
+              src="../images/456.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container-fluid mx-auto footer-inner">
+          <div
+            class="contact-box justify-content-between mb-3 d-none d-md-flex">
+            <div>
+              <div class="footer-title">Work Inquiry</div>
+              <div class="footer-text">Let's work together</div>
+            </div>
+            <div class="link-email">
+              <a
+                class="email"
+                title="Contact Olga"
+                onclick="window.location.href = `html/contact.html#contact-me`;">
+                Contact me
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-3">
+          <a
+            class="footer-email"
+            title="Olga`s email"
+            href="mailto:shlyak14@gmail.com">
+            shlyak14@gmail.com
+          </a>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            title="Olga`s LinkedIn"
+            href="https://www.linkedin.com/in/olga-shliakhova-25634a65/"
+            target="_blank">
+            <i class="icon bi bi-linkedin"></i>
+          </a>
+          <a
+            title="Olga`s facebook"
+            href="https://www.facebook.com/Lolik14"
+            target="_blank">
+            <i class="icon bi bi-facebook"></i>
+          </a>
+          <a
+            title="Olga`s Github"
+            href="https://github.com/LolikBolik14"
+            target="_blank">
+            <i class="icon bi bi-github"></i>
+          </a>
+        </div>
+        <p class="text-center mt-5">
+          ✌️ This website was coded by Olga Shiiakhova, and is
+          <a
+            title="Olga`s Github portfolio app"
+            href="https://github.com/LolikBolik14/portfolio-app"
+            target="_blank">
+            open-sourced
+          </a>
+        </p>
+      </footer>
     </div>
     <script src="js/script.is"></script>
   </body>
